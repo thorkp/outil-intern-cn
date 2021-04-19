@@ -1,0 +1,152 @@
+body{
+    background-color: #F6F9FF;
+    min-height: 100vh;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.menulateral{
+    background: #FFFFFF;
+    height: 100%;
+    float: left;
+    min-height: 100vh;
+    height: 100% !important;
+    width: 20%;
+}
+
+.menulateral img{
+    max-width: 150px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+
+}
+.menulateral p{
+    padding-left: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    color:#484A68;
+}
+.menulateral ul{
+    padding-left: 40px;
+}
+.menulateral li{
+    list-style-type: none;
+    padding-top: 12px;
+    font-size: 14px;
+}
+.menulateral i{
+    padding-right: 10px;
+}
+.menulateral i, .menulateral {
+    color: #B5B9BE;
+}
+.menulateral .active, .menulateral .active i{
+    color: #3733A9;
+}
+
+.divform{
+    width: 30%;
+    float: left;
+    margin-left: 40px;
+}
+h2{
+    counter-reset: #666CA1;
+    font-weight: 400;
+}
+
+form{
+    margin-top: 20px;
+}
+form input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border:1px solid;
+    border-color: #dddddd;
+    background: #ffffff41;
+    min-height: 40px;
+
+}
+form input[type=button]{
+    width: 180px !important;
+    background: #397EF6;
+    color: #ffffff;
+    border: 0;
+    margin-top: 30px;
+}
+
+form input::placeholder{
+    font-size:10px;
+    padding-left: 15px;
+    color: #c4c4c4;
+}
+
+form label{
+    color: #6E7C96;
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+}
+
+form label span{
+    color: #96a7c9;
+    font-size: 10px;
+}
+.prev{
+    float: right;
+    overflow: hidden;
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.prev img{
+    width: auto;
+    height: auto;
+    max-width: 320px;
+}
+
+
+#sig-canvas {
+    border: 2px dotted #CCCCCC;
+    border-radius: 15px;
+    cursor: crosshair;
+  }
+
+  .alert{
+    color: #6E7C96;
+    font-size: 14px;
+    display: block;
+      margin-top: 40px;
+  }
+
+  canvas{
+      border: 1px dotted black;
+  }
+
+  .hidden{
+      display: none;
+  }
+
+  h3{
+      text-transform: uppercase;
+  }
+  .imperative{
+    display: block;
+    margin-top: -15px;
+    color: #96a7c9;
+    text-decoration: underline;
+    margin-bottom: 30px;
+  }
+  .imperative span{
+      font-weight: 600;
+  }
+  .imperative span:nth-child(2){
+      text-transform: capitalize;
+  }
