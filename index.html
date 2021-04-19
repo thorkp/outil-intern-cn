@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-	
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.4.0/fabric.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.4.0/fabric.min.js" integrity="sha512-Ly9uI3QY88jVXCgkORH2A4Qqz5xYm1pew9jEgedgSpyEg9asvyPISK+CY7QNDN3CMftXU/KLNwQR7XUUo7Cqag==" crossorigin="anonymous"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7409d80ec5.js" crossorigin="anonymous"></script>
@@ -118,6 +118,7 @@
             
         </div>
 </div>
+
 </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js" integrity="sha512-VKjwFVu/mmKGk0Z0BxgDzmn10e590qk3ou/jkmRugAkSTMSIRkd4nEnk+n7r5WBbJquusQEQjBidrBD3IQQISQ==" crossorigin="anonymous"></script>
@@ -160,16 +161,6 @@ document.getElementById('dateMonth').innerHTML = currentMonth;
 document.getElementById('moisEnCours').innerHTML = currentMonth;
 
 
-function nthDayInMonth(n, day, m, y) {
-// day is in range 0 Sunday to 6 Saturday
-var y = y ||
-      new Date(Date.now()).getFullYear();
-var m = m ||
-      new Date(Date.now()).getMonth();
-var d = firstDayInMonth(day, m, y);
-return new Date(d.getFullYear(),
-  d.getMonth(), d.getDate() + (n - 1) * 7);
-}
 
  $('#button').click(function() {
 
@@ -225,15 +216,11 @@ return new Date(d.getFullYear(),
     doc.addImage(canvas, 'png', 133, 255, 25, 20);
    
     filename = "cheques-dejeuners" + "-" + prenom + "-" + nom + "-" + dateMonth;
-
+    
     doc.save(filename);
 
     
  });
-
-
-
-
 
 </script>
 </html>
